@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your-qr</title>
+
+
+    <link rel="stylesheet" href="brain.css">
+</head>
+<body>
+    <div id="contener" >
+        <div id="main" >
+            <p>QR_Banalo</p>
+            <input type="text" placeholder="dal_de_vai" id="text" >
+            <button onclick="brain()" >bana_dal</button>
+            <div id="imgbox"> 
+            <img src="" id="qrimg" >
+            </div>  
+        </div>
+    </div>
+
+
+
+
+    <SCript>
+        // let imgbox=document.getElementById("imgbox");
+        let qrimg=document.getElementById("qrimg");
+        let text=document.getElementById("text");
+        function brain() {
+            qrimg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text.value;
+        }
+    </SCript>
+    
+</body>
+</html>
